@@ -1,0 +1,17 @@
+.menu-card{
+    .inner-card-dish{
+        width: 60%;
+        margin: 0 auto
+    }
+    .dishThubler{
+       max-width: 78px;
+    border-radius: 22px;
+    }
+    .dish-info{
+        padding-right: 6%;
+        padding-left: 4%;
+    }
+    mat-list-item{
+        margin-bottom: 4% !important;
+    }
+}

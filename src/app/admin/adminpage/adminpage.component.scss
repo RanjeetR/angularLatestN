@@ -1,0 +1,32 @@
+
+
+
+.admin-dashboard {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  .example-button-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .example-card {
+    max-width: 200px;
+    
+  }
+  .dishcontainer{
+      margin-top: 4%;
+      img{
+        max-width: 100%;
+      }
+  }
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }

@@ -1,0 +1,41 @@
+<div class=" menu-card">
+<mat-card>
+  <mat-card class="inner-card-dish">
+
+          <mat-list role="list">
+              <mat-list-item role="listitem" *ngFor="let dish of tempDish" >
+                  <img class="dishThubler"  [src]="dish.imgUrl">
+                <span class="dish-info">
+                  <label> {{dish.dishName}}</label> 
+                  <label> {{dish.type}}</label> 
+                  <label>Price  {{dish.price  | currency:"₹":0}}</label> 
+                </span>
+                <span>
+                    <mat-form-field>
+                        <mat-select  (change)="onChange($event,dish)">
+                        
+                          <mat-option  *ngFor="let w of week"   [value]="w.day" [disabled]="w.selected" >{{w.day}}</mat-option>
+                         
+                        </mat-select>
+                      </mat-form-field>
+                      
+                      
+              </span>
+            
+              </mat-list-item>
+            </mat-list>
+            <mat-divider></mat-divider>
+            <br/>
+            <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center center" >
+              <div>
+                <strong>Total Cost for Week {{totalCost | currency:"₹":0}} </strong>
+              </div>
+              <div>
+                  <a style="float: right;" mat-raised-button  color="primary" (click)="checkout()">Checkout</a>
+              </div>
+           </div>
+  </mat-card>
+  
+</mat-card>
+
+</div>

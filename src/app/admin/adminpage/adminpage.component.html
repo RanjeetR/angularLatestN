@@ -1,0 +1,45 @@
+<form class="admin-dashboard" name="addDish">
+  <mat-card>     
+        <mat-card-content>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Enter Name "  [(ngModel)]="dishName" name="dish">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <textarea matInput placeholder="Enter price" [(ngModel)]="price"  name="price"></textarea>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <textarea matInput placeholder="Enter Image Url" [(ngModel)]="imgUrl"  name="img"></textarea>
+    </mat-form-field>
+    <p>Please enter 7 dishes with all fields.  <strong>Remaining {{7 - counter}}</strong>  </p> <br/>
+    <div class="button-row">
+  
+        <button mat-raised-button color="primary" (click)="saveItem()">Save</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  </form>
+
+
+
+  <div class="dishcontainer" fxLayout="row" fxLayoutGap="10px" >
+      <!-- <mat-grid-tile *ngFor="let dish of allDishes">
+        {{dish.dishName}}
+      </mat-grid-tile> -->
+   
+      <mat-card class="example-card" *ngFor="let dish of allDishes">
+          <mat-card-header>
+            <div mat-card-avatar > <img [src]="dish.imgUrl" /> </div>
+            <mat-card-title>{{dish.dishName}}</mat-card-title>
+         
+          </mat-card-header>
+          <img mat-card-image [src]="dish.imgUrl" alt="Photo of a dish">
+          <mat-card-content>
+         
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>DELETE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>

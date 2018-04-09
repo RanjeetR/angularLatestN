@@ -1,0 +1,43 @@
+// .container{
+//     .user-card{
+//         max-width: 300px;
+//     }
+//     .buybutton{
+//         float: right;
+//     }
+//     .card-header-image {
+//         background-image: url('../../../assets/logo.png');
+//         background-size: cover;
+//       }
+// }
+
+.parent-card{
+    margin: 30px;
+}
+
+.inner-card{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.btn-contnr{
+    padding-bottom: 4%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;
+    float: left;
+    margin-left:10px;
+    margin-top:10px;
+    margin-right: 10PX;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}

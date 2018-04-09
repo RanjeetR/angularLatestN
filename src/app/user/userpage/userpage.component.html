@@ -1,0 +1,17 @@
+
+<div class="parent-card" >
+  <p>All dishes available. Click to build diet plan  <a style="float: right;" mat-raised-button routerLink="/weeklymenu" color="primary">Create diet Plan</a></p> 
+    <div class="card"  *ngFor="let dish of tempDish" >
+     <a routerLink="/weeklymenu">   <img [src]="dish.imgUrl" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>{{dish.dishName}}</b></h4> 
+          <!-- <div class="btn-contnr">
+              <p>{{dish.type}}  <a style="float: right;" mat-raised-button routerLink="/weeklymenu" color="primary">Add</a> </p> 
+         
+          </div> -->
+        </div>
+      </a>
+      </div>
+      
+    </div> 
+

@@ -1,0 +1,15 @@
+{
+"user":[
+     {
+       "username":"admin",
+       "password":"MojoNetworks",
+       "usertype":"admin"
+     },
+     {
+       "username":"user",
+       "password":"user",
+       "usertype":"standard"
+     }
+     
+  ]
+}
